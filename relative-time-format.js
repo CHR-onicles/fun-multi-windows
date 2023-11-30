@@ -1,5 +1,5 @@
 const time = new Intl
-  .RelativeTimeFormat('fr', {
+  .RelativeTimeFormat('en', {
     numeric: 'auto'
   });
 
@@ -9,10 +9,10 @@ time.format(22, 'day');
 
 time.format(1, 'month');
 time.format(-1, 'month');
-time.format(0, 'month');
+console.log(time.format(0, 'month'));
 time.format(10, 'month');
 
-time.format(-1, 'quarter');
-time.format(-1, 'seconds');
-time.format(0, 'seconds');
+console.log(time.format(-1, 'quarter'));
+console.log(time.format(-10, 'seconds'));
+console.log(time.format(0, 'seconds'));
 
